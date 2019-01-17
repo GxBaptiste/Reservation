@@ -17,10 +17,15 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Entity
 @Table(name = "Vol")
 @SequenceGenerator(name = "vol_seq", allocationSize = 100)
 public class Vol {
+	
+	private final static Logger logger = LoggerFactory.getLogger(Vol.class);
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "vol_seq")
@@ -131,7 +136,7 @@ public class Vol {
 	}
 	
 	public void affiche() {
-		System.out.println(numVol+" | "+type+" | "+nbPlaces+" | "+villeD+" | "+villeA+" | "+dateD);
+		logger.debug(numVol+" | "+type+" | "+nbPlaces+" | "+villeD+" | "+villeA+" | "+dateD);
 	}
 
 }

@@ -11,11 +11,16 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Entity
 @Table(name = "Passager")
 @SequenceGenerator(name = "Passager", allocationSize = 100)
 public class Passager {
 
+	private final static Logger logger = LoggerFactory.getLogger(Passager.class);
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "passager_seq")
 	@Column
@@ -98,7 +103,7 @@ public class Passager {
 	}
 	
 	public void affiche() {
-		System.out.println(idReservation+" | "+nom+" | "+prenom+" | "+age);
+		logger.debug(idReservation+" | "+nom+" | "+prenom+" | "+age);
 	}
 
 }

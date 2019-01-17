@@ -13,7 +13,7 @@ import Service.ServiceVol;
 
 public class Ui {
 	
-	private final static Logger logger = LoggerFactory.getLogger(ServiceVol.class);
+	private final static Logger logger = LoggerFactory.getLogger(Ui.class);
 	
 	private static String affichage_retour = "Veuillez choisir l'une des options suivantes \n";
 	private static String afficheNumVol = "Numéro du vol : ";

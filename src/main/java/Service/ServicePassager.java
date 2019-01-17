@@ -2,12 +2,17 @@ package Service;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import dao.PassagerDAO;
 import dao.VolDAO;
 import modele.Passager;
 import modele.Vol;
 
 public class ServicePassager {
+	
+	private final static Logger logger = LoggerFactory.getLogger(ServicePassager.class);
 	
 	public static Vol rechercheVol(String s) {
 		return VolDAO.rechercheVol(s);	
@@ -21,7 +26,7 @@ public class ServicePassager {
 	
 	public static void afficheReservationsVol(Vol v) {
 		List<Passager> passagers = PassagerDAO.reservationVols(v);
-		System.out.println("IdRéservation | Nom | Prénom | Age");
+		logger.debug("IdRéservation | Nom | Prénom | Age");
 		for (Passager p  : passagers) {
 			p.affiche();
 		}
@@ -37,9 +42,9 @@ public class ServicePassager {
 	
 	public static void afficheListeReservation(String n,String pre) {
 		List<Passager> passagers = PassagerDAO.listeReservations(n,pre);
-		System.out.println("IdReservation | Nom | Prénom | numVol | Date de départ");
+		logger.debug("IdReservation | Nom | Prénom | numVol | Date de départ");
 		for(Passager p : passagers) {
-			System.out.println(p.getIdReservation()+" | "+p.getNom()+" | "+p.getPrenom()+" | "+p.getVol().getNumVol()+" | "+p.getVol().getDateD());
+			logger.debug(p.getIdReservation()+" | "+p.getNom()+" | "+p.getPrenom()+" | "+p.getVol().getNumVol()+" | "+p.getVol().getDateD());
 		}
 	}
 
