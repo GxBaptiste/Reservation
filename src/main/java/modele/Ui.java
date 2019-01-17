@@ -9,6 +9,9 @@ import Service.ServicePassager;
 import Service.ServiceVol;
 
 public class Ui {
+	
+	private static String affichage_retour = "Veuillez choisir l'une des options suivantes \n";
+	private static String afficheNumVol = "Numéro du vol : ";
 
 	@SuppressWarnings("resource")
 	public static void afficheMenuGeneral() throws ParseException {
@@ -32,7 +35,7 @@ public class Ui {
 		} else if (s.equals("3")) {
 			Main.ui = true;
 		} else {
-			System.out.println("Veuillez choisir l'une des options suivantes \n");
+			System.out.println(affichage_retour);
 			afficheMenuGeneralChoix(s);
 		}
 	}
@@ -61,7 +64,7 @@ public class Ui {
 		} else if (str.equals("6")) {
 			afficheMenuGeneral();
 		} else {
-			System.out.println("Veuillez choisir l'une des options suivantes \n");
+			System.out.println(affichage_retour);
 			afficheGestionVol();
 		}
 	}
@@ -87,7 +90,7 @@ public class Ui {
 		} else if (str.equals("5")) {
 			afficheMenuGeneral();
 		} else {
-			System.out.println("Veuillez choisir l'une des options suivantes \n");
+			System.out.println(affichage_retour);
 			afficheGestionReservation();
 		}
 	}
@@ -98,7 +101,7 @@ public class Ui {
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
-		System.out.println("Numéro du vol : ");
+		System.out.println(afficheNumVol);
 		String numVol = sc.nextLine();
 		System.out.println("Type de l'avion : ");
 		String typeVol = sc.nextLine();
@@ -117,7 +120,7 @@ public class Ui {
 	public static void afficheSupprimerVol() {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Numero du vol : ");
+		System.out.println(afficheNumVol);
 		String numVol = sc.nextLine();
 		ServiceVol.supprimerVol(numVol);
 	}
@@ -129,7 +132,7 @@ public class Ui {
 	@SuppressWarnings("resource")
 	public static void afficheAvionNumero() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Numero du vol : ");
+		System.out.println(afficheNumVol);
 		String numVol = sc.nextLine();
 		ServiceVol.afficherAvionNumVol(numVol);
 	}
@@ -148,7 +151,7 @@ public class Ui {
 	@SuppressWarnings("resource")
 	public static void afficheCreationReservation() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Numéro du vol : ");
+		System.out.println(afficheNumVol);
 		String numVol = sc.nextLine();
 		Vol vol = ServicePassager.rechercheVol(numVol);
 
@@ -167,7 +170,7 @@ public class Ui {
 	@SuppressWarnings("resource")
 	public static void afficheReservationVol() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Numéro du vol : ");
+		System.out.println(afficheNumVol);
 		String numVol = sc.nextLine();
 		Vol vol = ServicePassager.rechercheVol(numVol);
 		ServicePassager.afficheReservationsVol(vol);
