@@ -2,7 +2,6 @@ package modele;
 
 import dao.*;
 
-import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -17,10 +16,9 @@ import Service.ServiceVol;
 public class Main {
 
 	static EntityManager em = null;
-	static SimpleDateFormat formater = null;
 	static boolean ui;
 
-	public static void main(String[] args) throws SQLException, ParseException {
+	public static void main(String[] args) throws ParseException {
 
 		EntityManager em = DBHelper.createEntityManager();
 		em.getTransaction().begin();
