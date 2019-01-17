@@ -2,12 +2,16 @@ package Service;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import dao.VolDAO;
 import modele.Vol;
 
 public class ServiceVol {
 	
 	private static String affichage = "Numero | Type | Place | Départ | Arrivé | Date";
+	private final static Logger logger = LoggerFactory.getLogger(ServiceVol.class);
 
 	public static void creationVol(Vol v) {
 		VolDAO.createVol(v);
@@ -23,7 +27,7 @@ public class ServiceVol {
 
 	public static void afficherAllVol() {
 		List<Vol> vols = VolDAO.listeVols();
-		System.out.println(affichage);
+		logger.debug(affichage);
 		for (Vol v : vols) {
 			v.affiche();
 		}
@@ -31,13 +35,13 @@ public class ServiceVol {
 
 	public static void afficherAvionNumVol(String s) {
 		Vol v = VolDAO.rechercheVol(s);
-		System.out.println(affichage);
+		logger.debug(affichage);
 		v.affiche();
 	}
 
 	public static void afficherAvionVille(String villeD, String villeA) {
 		List<Vol> vols = VolDAO.listeVolVille(villeD,villeA);
-		System.out.println(affichage);
+		logger.debug(affichage);
 		for (Vol v : vols) {
 			v.affiche();
 		}
