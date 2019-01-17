@@ -10,6 +10,10 @@ public class DBHelper {
 	private static EntityManagerFactory entityManagerFactory;
 	private static EntityManager entityManager;
 
+	private DBHelper() {
+	    throw new IllegalStateException("Utility class");
+	  }
+	
 	public static EntityManager createEntityManager() {
 		if (entityManagerFactory == null) {
 			entityManagerFactory = Persistence.createEntityManagerFactory("reservation");

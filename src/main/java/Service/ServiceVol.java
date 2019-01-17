@@ -13,6 +13,10 @@ public class ServiceVol {
 	private static String affichage = "Numero | Type | Place | Départ | Arrivé | Date";
 	private final static Logger logger = LoggerFactory.getLogger(ServiceVol.class);
 
+	private ServiceVol() {
+	    throw new IllegalStateException("Utility class");
+	  }
+	
 	public static void creationVol(Vol v) {
 		VolDAO.createVol(v);
 	}

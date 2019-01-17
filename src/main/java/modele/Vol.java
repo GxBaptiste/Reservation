@@ -58,7 +58,7 @@ public class Vol {
 
 	@OneToMany(mappedBy = "vol",fetch = FetchType.EAGER)
 	private List<Passager> passager;
-
+	
 	public String getNumVol() {
 		return numVol;
 	}
@@ -66,6 +66,12 @@ public class Vol {
 	public void setNumVol(String numVol) {
 		this.numVol = numVol;
 	}
+	
+	
+	@SuppressWarnings("unused")
+	private Vol() {
+	    throw new IllegalStateException("Utility class");
+	  }
 
 	public Vol(String nV,String t, Integer i, String vD, String vA, Date d) {
 		numVol=nV;
@@ -76,8 +82,6 @@ public class Vol {
 		dateD = d;
 		passager = new ArrayList<Passager>();
 	}
-	
-	public Vol() {}
 
 	public Integer getId() {
 		return id;

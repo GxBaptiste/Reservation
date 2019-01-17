@@ -45,6 +45,11 @@ public class Passager {
 	@ManyToOne
 	private Vol vol;
 
+	@SuppressWarnings("unused")
+	private Passager() {
+	    throw new IllegalStateException("Utility class");
+	  }
+	
 	public Passager(String n, String p, Integer a,Vol v) {
 		nom = n;
 		prenom = p;
@@ -55,8 +60,6 @@ public class Passager {
 	public void setVol(Vol vol) {
 		this.vol = vol;
 	}
-
-	public Passager() {}
 
 	public void updateIdReservation() {
 		idReservation = vol.getNumVol() + "-" + Integer.toString(id);

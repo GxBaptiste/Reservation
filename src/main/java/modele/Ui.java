@@ -18,6 +18,11 @@ public class Ui {
 	private static String affichage_retour = "Veuillez choisir l'une des options suivantes \n";
 	private static String afficheNumVol = "Numéro du vol : ";
 
+
+	private Ui() {
+	    throw new IllegalStateException("Utility class");
+	  }
+	
 	@SuppressWarnings("resource")
 	public static void afficheMenuGeneral() throws ParseException {
 

@@ -7,6 +7,11 @@ import javax.persistence.TypedQuery;
 import modele.Vol;
 
 public class VolDAO {
+	
+
+	private VolDAO() {
+	    throw new IllegalStateException("Utility class");
+	  }
 
 	public static void createVol(Vol v) {
 		EntityManager entity = DBHelper.createEntityManager();
