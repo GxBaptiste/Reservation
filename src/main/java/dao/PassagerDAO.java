@@ -69,7 +69,7 @@ public class PassagerDAO {
 		query.setParameter("idReservation", s);
 		List<Passager> res = query.getResultList();
 		em.close();
-		return res.size() != 0;
+		return res.isEmpty();
 	}
 
 	public static List<Passager> listeReservations(String n, String p) {

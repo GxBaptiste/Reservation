@@ -12,7 +12,7 @@ import modele.Vol;
 
 public class ServicePassager {
 	
-	private final static Logger logger = LoggerFactory.getLogger(ServicePassager.class);
+	private static final  Logger logger = LoggerFactory.getLogger(ServicePassager.class);
 	
 	private ServicePassager() {
 

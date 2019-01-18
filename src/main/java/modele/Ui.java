@@ -15,7 +15,7 @@ public class Ui {
 	
 	private static final  Logger logger = LoggerFactory.getLogger(Ui.class);
 	
-	private static String affichage_retour = "Veuillez choisir l'une des options suivantes \n";
+	private static String affichageRetour = "Veuillez choisir l'une des options suivantes \n";
 	private static String afficheNumVol = "Numéro du vol : ";
 
 
@@ -45,7 +45,7 @@ public class Ui {
 		} else if (s.equals("3")) {
 			Main.ui = true;
 		} else {
-			logger.info(affichage_retour);
+			logger.info(affichageRetour);
 			afficheMenuGeneralChoix(s);
 		}
 	}
@@ -74,7 +74,7 @@ public class Ui {
 		} else if (str.equals("6")) {
 			afficheMenuGeneral();
 		} else {
-			logger.info(affichage_retour);
+			logger.info(affichageRetour);
 			afficheGestionVol();
 		}
 	}
@@ -100,7 +100,7 @@ public class Ui {
 		} else if (str.equals("5")) {
 			afficheMenuGeneral();
 		} else {
-			logger.info(affichage_retour);
+			logger.info(affichageRetour);
 			afficheGestionReservation();
 		}
 	}
