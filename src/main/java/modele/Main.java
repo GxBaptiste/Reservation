@@ -1,24 +1,30 @@
 package modele;
 
-import dao.*;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import Service.ServicePassager;
 import Service.ServiceVol;
+import dao.DBHelper;
 
 public class Main {
+	
+
+	private final static Logger logger = LoggerFactory.getLogger(Main.class);
 
 	static EntityManager em = null;
 	static boolean ui;
 
 	public static void main(String[] args) throws ParseException {
+		
+		logger.debug("tetst");
 
 		EntityManager em = DBHelper.createEntityManager();
 		em.getTransaction().begin();
@@ -27,7 +33,7 @@ public class Main {
 		Vol v1 = new Vol("0001", "A777", 77, "Orléans", "Montpellier", formatter.parse("11/01/2019"));
 		List<Vol> vols = new ArrayList<Vol>();
 		vols.add(v1);
-		Passager p1 = new Passager("Carreaux", "Baptiste", 23, v1);
+		Passager p1 = new Passager("Carreaux", "Baptiste", 23, v1);   
 		Passager p2 = new Passager("Rouer", "Elie", 23, v1);
 		Passager p3 = new Passager("Montet", "Benjamin", 26, v1);
 		List<Passager> passagerVol0001 = new ArrayList<Passager>();

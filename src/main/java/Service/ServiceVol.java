@@ -14,7 +14,7 @@ public class ServiceVol {
 	private final static Logger logger = LoggerFactory.getLogger(ServiceVol.class);
 
 	private ServiceVol() {
-	    throw new IllegalStateException("Utility class");
+
 	  }
 	
 	public static void creationVol(Vol v) {

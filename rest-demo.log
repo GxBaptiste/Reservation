@@ -1,0 +1,67 @@
+15:13:23.050 [main] [DEBUG] modele.Main - tetst 
+15:13:25.084 [main] [INFO ] modele.Ui - 
+
+
+
+ 
+15:13:25.088 [main] [INFO ] modele.Ui - 1 : Gestion des vols 
+15:13:25.088 [main] [INFO ] modele.Ui - 2 : Gestion des réservations 
+15:13:25.088 [main] [INFO ] modele.Ui - 3 : Quitter 
+16:09:23.496 [main] [DEBUG] modele.Main - tetst 
+16:09:25.929 [main] [INFO ] modele.Ui - 
+
+
+
+ 
+16:09:25.933 [main] [INFO ] modele.Ui - 1 : Gestion des vols 
+16:09:25.933 [main] [INFO ] modele.Ui - 2 : Gestion des réservations 
+16:09:25.933 [main] [INFO ] modele.Ui - 3 : Quitter 
+16:09:29.744 [main] [INFO ] modele.Ui - 
+ 
+16:09:29.748 [main] [INFO ] modele.Ui - 1 : Création d'une réservation 
+16:09:29.749 [main] [INFO ] modele.Ui - 2 : Afficher les réservations d'un vol 
+16:09:29.749 [main] [INFO ] modele.Ui - 3 : Annuler une réservation 
+16:09:29.749 [main] [INFO ] modele.Ui - 4 : Afficher toutes les réservations d'une personne 
+16:09:29.749 [main] [INFO ] modele.Ui - 5 : Retour en arrière 
+16:09:31.815 [main] [INFO ] modele.Ui - 
+ 
+16:09:31.816 [main] [INFO ] modele.Ui - Numéro du vol :  
+16:09:41.582 [main] [DEBUG] modele.Passager - 0001-1 | Carreaux | Baptiste | 23 
+16:09:41.582 [main] [DEBUG] modele.Passager - 0001-2 | Rouer | Elie | 23 
+16:09:41.582 [main] [DEBUG] modele.Passager - 0001-3 | Montet | Benjamin | 26 
+16:09:41.582 [main] [INFO ] modele.Ui - 
+
+
+
+ 
+16:09:41.582 [main] [INFO ] modele.Ui - 1 : Gestion des vols 
+16:09:41.582 [main] [INFO ] modele.Ui - 2 : Gestion des réservations 
+16:09:41.582 [main] [INFO ] modele.Ui - 3 : Quitter 
+16:11:25.502 [main] [DEBUG] modele.Main - tetst 
+16:11:27.740 [main] [INFO ] modele.Ui - 
+
+
+
+ 
+16:11:27.743 [main] [INFO ] modele.Ui - 1 : Gestion des vols 
+16:11:27.743 [main] [INFO ] modele.Ui - 2 : Gestion des réservations 
+16:11:27.743 [main] [INFO ] modele.Ui - 3 : Quitter 
+16:11:29.927 [main] [INFO ] modele.Ui - 
+ 
+16:11:29.928 [main] [INFO ] modele.Ui - 1 : Création d'un vol 
+16:11:29.928 [main] [INFO ] modele.Ui - 2 : Suppresion d'un vol 
+16:11:29.928 [main] [INFO ] modele.Ui - 3 : Liste des vols 
+16:11:29.928 [main] [INFO ] modele.Ui - 4 : Rechercher un avion 
+16:11:29.928 [main] [INFO ] modele.Ui - 5 : Rechercher un avion par ville de départ/arrivé 
+16:11:29.932 [main] [INFO ] modele.Ui - 6 : Retour en arrière 
+16:11:31.800 [main] [INFO ] modele.Ui - 
+ 
+16:11:31.882 [main] [DEBUG] modele.Vol - 0001 | A777 | 77 | Orléans | Montpellier | 2019-01-11 00:00:00.0 
+16:11:31.882 [main] [INFO ] modele.Ui - 
+
+
+
+ 
+16:11:31.882 [main] [INFO ] modele.Ui - 1 : Gestion des vols 
+16:11:31.882 [main] [INFO ] modele.Ui - 2 : Gestion des réservations 
+16:11:31.882 [main] [INFO ] modele.Ui - 3 : Quitter 

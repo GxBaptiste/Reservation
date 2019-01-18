@@ -12,7 +12,7 @@ public class PassagerDAO {
 	
 
 	private PassagerDAO() {
-	    throw new IllegalStateException("Utility class");
+
 	  }
 
 	public static void createPassager(Passager p) {

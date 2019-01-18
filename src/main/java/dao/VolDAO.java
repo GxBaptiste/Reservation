@@ -10,7 +10,7 @@ public class VolDAO {
 	
 
 	private VolDAO() {
-	    throw new IllegalStateException("Utility class");
+
 	  }
 
 	public static void createVol(Vol v) {

@@ -15,7 +15,7 @@ public class ServicePassager {
 	private final static Logger logger = LoggerFactory.getLogger(ServicePassager.class);
 	
 	private ServicePassager() {
-	    throw new IllegalStateException("Utility class");
+
 	  }
 	
 	public static Vol rechercheVol(String s) {

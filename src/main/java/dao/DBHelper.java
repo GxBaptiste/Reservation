@@ -11,7 +11,7 @@ public class DBHelper {
 	private static EntityManager entityManager;
 
 	private DBHelper() {
-	    throw new IllegalStateException("Utility class");
+	    
 	  }
 	
 	public static EntityManager createEntityManager() {

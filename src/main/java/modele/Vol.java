@@ -70,7 +70,7 @@ public class Vol {
 	
 	@SuppressWarnings("unused")
 	private Vol() {
-	    throw new IllegalStateException("Utility class");
+
 	  }
 
 	public Vol(String nV,String t, Integer i, String vD, String vA, Date d) {
@@ -140,7 +140,7 @@ public class Vol {
 	}
 	
 	public void affiche() {
-		logger.debug(numVol+" | "+type+" | "+nbPlaces+" | "+villeD+" | "+villeA+" | "+dateD);
+		logger.debug("{} | {} | {} | {} | {} | {}",numVol,type,nbPlaces,villeD,villeA,dateD);
 	}
 
 }

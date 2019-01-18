@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 public class Passager {
 
 	private final static Logger logger = LoggerFactory.getLogger(Passager.class);
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "passager_seq")
 	@Column
@@ -47,16 +47,16 @@ public class Passager {
 
 	@SuppressWarnings("unused")
 	private Passager() {
-	    throw new IllegalStateException("Utility class");
-	  }
-	
-	public Passager(String n, String p, Integer a,Vol v) {
+
+	}
+
+	public Passager(String n, String p, Integer a, Vol v) {
 		nom = n;
 		prenom = p;
-		age=a;
-		vol=v;
+		age = a;
+		vol = v;
 	}
-	
+
 	public void setVol(Vol vol) {
 		this.vol = vol;
 	}
@@ -104,9 +104,9 @@ public class Passager {
 	public Vol getVol() {
 		return vol;
 	}
-	
+
 	public void affiche() {
-		logger.debug(idReservation+" | "+nom+" | "+prenom+" | "+age);
+		logger.debug("{} | {} | {} | {}", idReservation, nom, prenom, age);
 	}
 
 }
