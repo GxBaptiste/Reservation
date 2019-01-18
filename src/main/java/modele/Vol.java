@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 @SequenceGenerator(name = "vol_seq", allocationSize = 100)
 public class Vol {
 	
-	private final static Logger logger = LoggerFactory.getLogger(Vol.class);
+	private static final Logger logger = LoggerFactory.getLogger(Vol.class);
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "vol_seq")

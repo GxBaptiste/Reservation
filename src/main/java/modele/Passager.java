@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 @SequenceGenerator(name = "Passager", allocationSize = 100)
 public class Passager {
 
-	private final static Logger logger = LoggerFactory.getLogger(Passager.class);
+	private static final Logger logger = LoggerFactory.getLogger(Passager.class);
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "passager_seq")

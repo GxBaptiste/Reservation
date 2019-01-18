@@ -1,4 +1,4 @@
-package Service;
+package service;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import modele.Vol;
 public class ServiceVol {
 	
 	private static String affichage = "Numero | Type | Place | Départ | Arrivé | Date";
-	private final static Logger logger = LoggerFactory.getLogger(ServiceVol.class);
+	private static final  Logger logger = LoggerFactory.getLogger(ServiceVol.class);
 
 	private ServiceVol() {
 

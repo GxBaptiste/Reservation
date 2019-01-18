@@ -8,12 +8,12 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import Service.ServicePassager;
-import Service.ServiceVol;
+import service.ServicePassager;
+import service.ServiceVol;
 
 public class Ui {
 	
-	private final static Logger logger = LoggerFactory.getLogger(Ui.class);
+	private static final  Logger logger = LoggerFactory.getLogger(Ui.class);
 	
 	private static String affichage_retour = "Veuillez choisir l'une des options suivantes \n";
 	private static String afficheNumVol = "Numéro du vol : ";

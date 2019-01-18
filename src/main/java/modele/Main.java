@@ -10,14 +10,14 @@ import javax.persistence.EntityManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import Service.ServicePassager;
-import Service.ServiceVol;
 import dao.DBHelper;
+import service.ServicePassager;
+import service.ServiceVol;
 
 public class Main {
 	
 
-	private final static Logger logger = LoggerFactory.getLogger(Main.class);
+	private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
 	static EntityManager em = null;
 	static boolean ui;
